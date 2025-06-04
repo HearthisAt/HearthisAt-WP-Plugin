@@ -47,7 +47,7 @@ Embed a playlist or set without params.
 Embed a user without color params and autostart.  
       `[hearthis color="#ff5c24" color2="#33fd11" autostart="1"]http://hearthis.at/djforce/[/hearthis]`
 
-Embeds a track with a black theme and a bachground image (if set).  
+Embeds a track with a black theme and a background image (if set).  
       `[hearthis theme="transparent_black" background="1" ]https://hearthis.at/djforce/baesser-forcesicht-dnbmix/[hearthis]`
 
 Embeds a track player with 300px width and a green button color.  
