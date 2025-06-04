@@ -101,7 +101,16 @@ Changelog
 
 **version 0.6.2**
 
-+ the plugin was originaly written by Benedikt Groß the founder of hearthis.at and this release fixes old or wrong options and bug so that you can use it with the latest wordpress version and you will have the full controll of all original hearthis paramsn 
++ the plugin was originaly written by Benedikt Groß the founder of hearthis.at and this release fixes old or wrong options and bug so that you can use it with the latest wordpress version and you will have the full controll of all original hearthis paramsn
+
+Running tests
+-------------
+
+Run the PHPUnit suite via:
+
+```
+vendor/bin/phpunit
+```
 
 
 **thx and support [hearthis.at][1]**
