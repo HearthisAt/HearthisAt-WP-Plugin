@@ -348,12 +348,13 @@ include(__DIR__.'/httpful.phar');
 
     if(isset($return['SL']))
     {
-      for ($i=0; $i < count($return['SL']); $i++) 
-      { 
+      $_return = '';
+      for ($i=0; $i < count($return['SL']); $i++)
+      {
         $_return .= $return['SL'][$i];
       }
       return $_return;
-    } 
+    }
   }
 
 
