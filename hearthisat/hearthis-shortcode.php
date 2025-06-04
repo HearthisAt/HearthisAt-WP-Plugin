@@ -417,7 +417,8 @@ include(__DIR__.'/httpful.phar');
     return false;
   }
   /**
-   * Function that will check if value is a valid HEX color.
+   * Remove the leading "#" from a valid HEX color after verifying its
+   * correctness.
    */
   function hearthis_clear_color( $value ) {
 
