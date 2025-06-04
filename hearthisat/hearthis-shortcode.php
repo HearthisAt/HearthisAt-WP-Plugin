@@ -60,11 +60,11 @@ include(__DIR__.'/httpful.phar');
     $shortcode_options['params'] = $shortcode_params;
 
     if(hearthis_url_is_type($shortcode_options['url']) === 'set')
-      $height = get_option('player_height',450);
-    else if (hearthis_url_is_type($shortcode_options['url']) === 'profile') 
-      $height = get_option('player_height',350);
-    else if (hearthis_url_is_type($shortcode_options['url']) === 'track') 
-      $height = get_option('player_height',145);
+      $height = get_option('hearthis_player_height_multi', 450);
+    else if (hearthis_url_is_type($shortcode_options['url']) === 'profile')
+      $height = get_option('hearthis_player_profile_height', 350);
+    else if (hearthis_url_is_type($shortcode_options['url']) === 'track')
+      $height = get_option('hearthis_player_height', 145);
     // else
     //   $height = hearthis_get_option('player_height',145);
 
@@ -331,16 +331,16 @@ include(__DIR__.'/httpful.phar');
     $height = $options['height'];
     $return = array();
     
-  $infos = hearthis_bypass_set_url($options['url']);   
+  $infos = hearthis_bypass_set_url($options['url']);
   $url = hearthis_iframe_url($options,$infos);
 
     if(isset($options['liststyle']) && $options['liststyle'] === 'single')
-    { 
-         foreach($url as $href) 
+    {
+         foreach($url as $href)
          {
               $return['SL'][] = sprintf('<div><iframe class="hearthis-iframe-widget" width="%s" height="%s" scrolling="no" frameborder="no" src="%s" allowtransparency></iframe></div>', $width, '145', $href);
          }
-    } 
+    }
     else {
         $return['SL'][] = sprintf('<iframe class="hearthis-iframe-widget" width="%s" height="%s" scrolling="no" frameborder="no" src="%s" allowtransparency></iframe>', $width, $height, $url);
     }
