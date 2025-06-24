@@ -120,3 +120,15 @@ vendor/bin/phpunit
 [3]: https://github.com/nategood/httpful
 [4]: http://phphttpclient.com/
 
+
+Contributing
+------------
+
+We welcome pull requests. Please make sure the test suite passes by running
+`vendor/bin/phpunit` before submitting your contribution.
+
+License
+-------
+
+This project is released under the [GPLv2](https://www.gnu.org/licenses/old-licenses/gpl-2.0.html). The
+license header can be found inside `hearthisat/hearthis-shortcode.php`.
